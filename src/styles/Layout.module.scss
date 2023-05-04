@@ -1,0 +1,21 @@
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  a {
+    border-radius: 0.4rem;
+    padding: 4px 16px;
+    &.active {
+      background-color: hsla(var(--color-primary), 0.1);
+      font-weight: bold;
+      color: hsl(var(--color-primary));
+    }
+  }
+}

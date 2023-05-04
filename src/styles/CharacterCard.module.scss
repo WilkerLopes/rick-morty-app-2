@@ -1,0 +1,38 @@
+.box {
+  background-color: hsl(var(--color-card));
+  display: flex;
+  gap: 12px;
+  .cover {
+    border-radius: hsl(var(--border-radius));
+  }
+  .side {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    flex-grow: 1;
+    .info {
+    }
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        height: 24px;
+        width: 24px;
+        border-radius: 99999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.125em;
+        color: hsl(var(--color-active));
+        padding: 0;
+        &:hover {
+          background-color: hsla(var(--color-active), 0.1);
+        }
+      }
+    }
+  }
+}
